@@ -13,7 +13,7 @@ const Gen = () => {
       match.toUpperCase()
     );
 
-  const audio = new Audio("../public/sound.mp3");
+  const audio = new Audio("/sound.mp3");
 
   const generatePDF = async (name) => {
     let nameLength = name.length;
