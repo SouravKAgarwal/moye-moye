@@ -6,7 +6,7 @@ function App() {
       <Gen />
       <footer>
         Made by
-        <div className="hover">Sourav and Bansal</div>
+        <div className="hover">Sourav and Bansal and gupta</div>
       </footer>
     </>
   );
