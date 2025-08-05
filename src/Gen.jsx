@@ -65,6 +65,11 @@ const Gen = () => {
 
   return (
     <div className="Gen">
+      <div className="window-bar">
+        <span className="window-dot red" />
+        <span className="window-dot yellow" />
+        <span className="window-dot green" />
+      </div>
       <h1>Certificate Generator</h1>
       <input
         type="text"
@@ -72,6 +77,7 @@ const Gen = () => {
         placeholder="Enter your name"
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
+        autoComplete="off"
       />
       <button id="submitBtn" onClick={handleSubmit}>
         Generate PDF
@@ -81,8 +87,10 @@ const Gen = () => {
           className: "",
           style: {
             padding: "16px",
-            color: "#ddd",
-            background: "#000",
+            color: "#fff",
+            background: "#ff5fa2",
+            fontFamily: "'VT323', monospace",
+            fontSize: "1.1rem",
           },
         }}
       />
